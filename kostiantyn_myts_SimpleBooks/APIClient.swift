@@ -10,11 +10,20 @@ import UIKit
 
 class APIClient {
   typealias CompletionHandler = (response: AnyObject?, error: NSError?) -> Void
+  typealias DownloadCompletionHandler = (response: NSURLResponse?, URL: NSURL?, error: NSError?) -> Void
   
   private static let sharedClient = APIClient()
   
-  private let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil, delegateQueue: NSOperationQueue.mainQueue())
-  
+  private let session: NSURLSession = {
+    let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+    config.URLCache = ImageCache.sharedURLCache()
+    
+    return NSURLSession(configuration: config, delegate: nil, delegateQueue: NSOperationQueue.mainQueue())
+  }()
+}
+
+
+extension APIClient {
   class func get(request: NSURLRequest, completion: CompletionHandler) {
     print(request.URL)
     let task: NSURLSessionDataTask = APIClient.sharedClient.session.dataTaskWithRequest(request) {
@@ -22,6 +31,7 @@ class APIClient {
       
       if error != nil {
         completion(response: nil, error: error)
+        return
       }
       
       guard let data = data else {
@@ -44,4 +54,20 @@ class APIClient {
     
     task.resume()
   }
+  
+  class func download(request: NSURLRequest, completion: DownloadCompletionHandler) {
+    let task: NSURLSessionDownloadTask = APIClient.sharedClient.session.downloadTaskWithRequest(request) {
+      (URL, response, error) -> Void in
+      if error != nil {
+        completion(response: nil, URL: nil, error: error)
+        return
+      }
+      
+      completion(response: response, URL: URL, error: error)
+    }
+    
+    task.resume()
+  }
+  
+  
 }
