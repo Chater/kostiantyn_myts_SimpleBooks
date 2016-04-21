@@ -9,7 +9,10 @@
 import UIKit
 
 class BookCell: UITableViewCell, TableViewCellProtocol {
-  var height: CGFloat = 60.0
+  @IBOutlet private weak var coverView: UIImageView!
+  @IBOutlet private weak var bookTitleLabel: UILabel!
+  
+  var height: CGFloat = 70.0
   var cellName: String = "BookCell"
   var object: AnyObject! {
     didSet {
@@ -20,6 +23,15 @@ class BookCell: UITableViewCell, TableViewCellProtocol {
 
 private extension BookCell {
   private func updateWithBook(book: Book) {
-    textLabel?.text = book.title + " \(book.rank)"
+    bookTitleLabel.attributedText = book.title + ("\nby " + book.author).color(.darkGrayColor()).font(UIFont.systemFontOfSize(14))
+    
+    ImageCache.imageForBook(book) {[unowned self]
+      image, _ in
+      
+      if let image = image {
+        self.coverView.image = image
+      }
+
+    }
   }
 }
