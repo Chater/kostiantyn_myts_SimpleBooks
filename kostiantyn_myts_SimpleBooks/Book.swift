@@ -10,6 +10,7 @@ import UIKit
 
 class Book {
   var title: String!
+  var author: String!
   var description: String?
   var rank: Int!
   var imageURL: NSURL!
@@ -19,6 +20,7 @@ class Book {
     self.init()
     
     self.title = dictionary["title"] as? String
+    self.author = dictionary["author"] as? String
     self.description = dictionary["description"] as? String
     self.rank = dictionary["rank"] as? Int
     self.imageURL = NSURL(string: dictionary["book_image"] as! String)
