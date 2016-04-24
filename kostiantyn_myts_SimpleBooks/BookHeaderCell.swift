@@ -1,19 +1,19 @@
 //
-//  BookCell.swift
+//  BookHeaderCell.swift
 //  kostiantyn_myts_SimpleBooks
 //
-//  Created by Chater on 4/19/16.
+//  Created by Chater on 4/21/16.
 //  Copyright © 2016 Kostia Myts. All rights reserved.
 //
 
 import UIKit
 
-class BookCell: UITableViewCell, TableViewCellProtocol {
+class BookHeaderCell: UITableViewCell, TableViewCellProtocol {
   @IBOutlet private weak var coverView: UIImageView!
   @IBOutlet private weak var bookTitleLabel: UILabel!
   
-  var height: CGFloat = 70.0
-  var cellName: String = "BookCell"
+  var height: CGFloat = 200.0
+  var cellName: String = "BookHeaderCell"
   var object: AnyObject! {
     didSet {
       updateWithBook(object as! Book)
@@ -21,9 +21,14 @@ class BookCell: UITableViewCell, TableViewCellProtocol {
   }
 }
 
-private extension BookCell {
+private extension BookHeaderCell {
   private func updateWithBook(book: Book) {
-    bookTitleLabel.attributedText = book.title + ("\nby " + book.author).color(.darkGrayColor()).font(UIFont.systemFontOfSize(14))
+    bookTitleLabel.attributedText =
+      book.title
+      + "\n" +
+      ("by " + book.author).color(.darkGrayColor()).font(UIFont.systemFontOfSize(14))
+      + "\n" +
+      "Rank: \(book.rank)".color(.darkGrayColor()).font(UIFont.italicSystemFontOfSize(14))
     
     ImageCache.imageForBook(book) {[unowned self]
       image, _ in
@@ -34,3 +39,4 @@ private extension BookCell {
     }
   }
 }
+

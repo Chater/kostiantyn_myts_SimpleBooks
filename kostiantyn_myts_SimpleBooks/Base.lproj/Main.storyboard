@@ -42,6 +42,24 @@
             </objects>
             <point key="canvasLocation" x="2262" y="-332"/>
         </scene>
+        <!--Book Details View Controller-->
+        <scene sceneID="VFR-x0-cBt">
+            <objects>
+                <tableViewController storyboardIdentifier="BookDetailsViewController" id="LLz-yC-5FP" customClass="BookDetailsViewController" customModule="kostiantyn_myts_SimpleBooks" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VnB-6f-jLO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="LLz-yC-5FP" id="8Pf-Ka-3tt"/>
+                            <outlet property="delegate" destination="LLz-yC-5FP" id="SQi-dw-ZOy"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVi-lc-qNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2935" y="-332"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>

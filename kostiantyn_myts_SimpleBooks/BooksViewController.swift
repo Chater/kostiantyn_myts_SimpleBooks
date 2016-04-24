@@ -37,7 +37,10 @@ extension BooksViewController: BooksPresentable {
   }
   
   func showBookDetails(book: Book) {
+    let vc = storyboard?.instantiateViewControllerWithIdentifier("BookDetailsViewController") as! BookDetailsViewController
+    vc.book = book
     
+    navigationController?.pushViewController(vc, animated: true)
   }
 }
 

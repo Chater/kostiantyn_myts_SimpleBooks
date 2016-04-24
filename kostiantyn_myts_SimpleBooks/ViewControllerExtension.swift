@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-  func showAlert(error: NSError, recoveryHandler: (() -> ())? ) {
+  func showAlert(error: NSError, recoveryHandler: (() -> ())? = nil) {
     let actionController = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: error.description, preferredStyle: .ActionSheet)
     
     let cancelAction = UIAlertAction(title: NSLocalizedString("Ok", comment: ""), style: .Cancel, handler: nil)
