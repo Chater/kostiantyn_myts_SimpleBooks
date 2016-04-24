@@ -16,7 +16,7 @@ class APIClient {
   
   private let session: NSURLSession = {
     let config = NSURLSessionConfiguration.defaultSessionConfiguration()
-    config.URLCache = ImageCache.sharedURLCache()
+    config.URLCache = ImageCache.sharedURLCache
     
     return NSURLSession(configuration: config, delegate: nil, delegateQueue: NSOperationQueue.mainQueue())
   }()

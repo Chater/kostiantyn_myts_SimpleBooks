@@ -11,22 +11,19 @@ import UIKit
 class ImageCache {
   typealias CompletionHandler = (image: UIImage?, error: NSError?) -> Void
   
-  private static let MemoryCapacity = 100 * 1024 * 1024 //100MB
-  private static let DiscCapacity = 100 * 1024 * 1024 //100MB
+  private static let MemoryCapacity = 100 * 1024 * 1024
+  private static let DiscCapacity = 100 * 1024 * 1024
   private static let DiskPath = "ImageCache"
   
-  static let sharedURLCache = {
-    return NSURLCache(memoryCapacity: MemoryCapacity, diskCapacity: DiscCapacity, diskPath: DiskPath)
-  }
+  static let sharedURLCache = NSURLCache(memoryCapacity: MemoryCapacity, diskCapacity: DiscCapacity, diskPath: DiskPath)
 }
 
 extension ImageCache {
   class func imageForBook(book: Book, completionHandler: CompletionHandler) {
     let request = NSURLRequest(URL: book.imageURL)
     
-    if let cachedResponse = ImageCache.sharedURLCache().cachedResponseForRequest(request) {
+    if let cachedResponse = ImageCache.sharedURLCache.cachedResponseForRequest(request) {
       completionHandler(image: UIImage(data: cachedResponse.data), error: nil)
-      print("cached")
     }
     else {
       download(request, completionHandler: completionHandler)
@@ -51,11 +48,10 @@ private extension ImageCache {
         completionHandler(image: nil, error: nil)
       }
     }
-
   }
   
   class private func cache(request: NSURLRequest, response: NSURLResponse, data: NSData) {
     let cachedResponse = NSCachedURLResponse(response: response, data: data)
-    ImageCache.sharedURLCache().storeCachedResponse(cachedResponse, forRequest: request)
+    ImageCache.sharedURLCache.storeCachedResponse(cachedResponse, forRequest: request)
   }
 }
