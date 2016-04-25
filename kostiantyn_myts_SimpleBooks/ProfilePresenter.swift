@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 import FBSDKLoginKit
 
 protocol ProfilePresentable: NSObjectProtocol {
@@ -30,15 +31,18 @@ class ProfilePresenter: NSObject {
 
 extension ProfilePresenter: FBSDKLoginButtonDelegate {
   func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-    
+
+    Notifications.FacebookStatusDidChange.post()
+
     buildSections()
   }
-  
+
   func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-    print("loginButtonDidLogOut")
+    Notifications.FacebookStatusDidLogout.post()
+    
     cleanUpLikedBooks()
   }
-  
+
   func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
     return true
   }

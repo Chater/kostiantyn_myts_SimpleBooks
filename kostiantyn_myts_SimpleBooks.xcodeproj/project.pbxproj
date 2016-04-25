@@ -16,6 +16,11 @@
 		099D8D691CC953390090E98B /* BookHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099D8D671CC953390090E98B /* BookHeaderCell.xib */; };
 		09B366321CCD37BC003237FC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B366311CCD37BC003237FC /* ProfileViewController.swift */; };
 		09B366351CCD42C6003237FC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B366341CCD42C6003237FC /* ProfilePresenter.swift */; };
+		09B366381CCE3B3C003237FC /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B366361CCE3B3C003237FC /* TextCell.swift */; };
+		09B366391CCE3B3C003237FC /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B366371CCE3B3C003237FC /* TextCell.xib */; };
+		09B3663C1CCE3FAF003237FC /* LoginCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3663A1CCE3FAF003237FC /* LoginCell.swift */; };
+		09B3663D1CCE3FAF003237FC /* LoginCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B3663B1CCE3FAF003237FC /* LoginCell.xib */; };
+		09B3663F1CCE40C5003237FC /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3663E1CCE40C5003237FC /* Notifications.swift */; };
 		09C2F2301CC67165004CD5A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F22F1CC67165004CD5A7 /* AppDelegate.swift */; };
 		09C2F2321CC67165004CD5A7 /* GenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F2311CC67165004CD5A7 /* GenresViewController.swift */; };
 		09C2F2341CC67165004CD5A7 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F2331CC67165004CD5A7 /* BooksViewController.swift */; };
@@ -51,6 +56,11 @@
 		099D8D671CC953390090E98B /* BookHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookHeaderCell.xib; sourceTree = "<group>"; };
 		09B366311CCD37BC003237FC /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		09B366341CCD42C6003237FC /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		09B366361CCE3B3C003237FC /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		09B366371CCE3B3C003237FC /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		09B3663A1CCE3FAF003237FC /* LoginCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCell.swift; sourceTree = "<group>"; };
+		09B3663B1CCE3FAF003237FC /* LoginCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginCell.xib; sourceTree = "<group>"; };
+		09B3663E1CCE40C5003237FC /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		09C2F22C1CC67165004CD5A7 /* kostiantyn_myts_SimpleBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kostiantyn_myts_SimpleBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C2F22F1CC67165004CD5A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C2F2311CC67165004CD5A7 /* GenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +124,10 @@
 			children = (
 				099D8D661CC953390090E98B /* BookHeaderCell.swift */,
 				099D8D671CC953390090E98B /* BookHeaderCell.xib */,
+				09B366361CCE3B3C003237FC /* TextCell.swift */,
+				09B366371CCE3B3C003237FC /* TextCell.xib */,
+				09B3663A1CCE3FAF003237FC /* LoginCell.swift */,
+				09B3663B1CCE3FAF003237FC /* LoginCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -142,6 +156,14 @@
 				09B366341CCD42C6003237FC /* ProfilePresenter.swift */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		09B366401CCE40C9003237FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09B3663E1CCE40C5003237FC /* Notifications.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		09C2F2231CC67165004CD5A7 = {
@@ -235,6 +257,7 @@
 				09C2F2541CC67DD2004CD5A7 /* App */,
 				09C2F2561CC67DF2004CD5A7 /* Modules */,
 				09C2F2551CC67DD8004CD5A7 /* Extensions */,
+				09B366401CCE40C9003237FC /* Helpers */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -433,8 +456,10 @@
 				099D8D691CC953390090E98B /* BookHeaderCell.xib in Resources */,
 				09C2F2741CC69CA1004CD5A7 /* BookCell.xib in Resources */,
 				09C2F2391CC67165004CD5A7 /* Assets.xcassets in Resources */,
+				09B366391CCE3B3C003237FC /* TextCell.xib in Resources */,
 				09C2F2371CC67165004CD5A7 /* Main.storyboard in Resources */,
 				09C2F2631CC68CB0004CD5A7 /* GenreCell.xib in Resources */,
+				09B3663D1CCE3FAF003237FC /* LoginCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +526,8 @@
 				09C2F2581CC67E48004CD5A7 /* Genre.swift in Sources */,
 				09B366321CCD37BC003237FC /* ProfileViewController.swift in Sources */,
 				09C2F25F1CC689BF004CD5A7 /* TableViewCellProtocol.swift in Sources */,
+				09B3663F1CCE40C5003237FC /* Notifications.swift in Sources */,
+				09B3663C1CCE3FAF003237FC /* LoginCell.swift in Sources */,
 				099D8D601CC942120090E98B /* Cache.swift in Sources */,
 				099D8D681CC953390090E98B /* BookHeaderCell.swift in Sources */,
 				09C2F24D1CC67D34004CD5A7 /* GenresPresenter.swift in Sources */,
@@ -513,6 +540,7 @@
 				09C2F2321CC67165004CD5A7 /* GenresViewController.swift in Sources */,
 				09B366351CCD42C6003237FC /* ProfilePresenter.swift in Sources */,
 				099D8D5B1CC93B1C0090E98B /* TableViewExtension.swift in Sources */,
+				09B366381CCE3B3C003237FC /* TextCell.swift in Sources */,
 				09C2F24F1CC67D3F004CD5A7 /* GetGenres.swift in Sources */,
 				09C2F2451CC671C2004CD5A7 /* APIClient.swift in Sources */,
 				09C2F2621CC68CB0004CD5A7 /* GenreCell.swift in Sources */,

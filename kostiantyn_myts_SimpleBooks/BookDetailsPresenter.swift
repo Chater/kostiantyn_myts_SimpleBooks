@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKCoreKit
 
 protocol BookDetailsPresentable: NSObjectProtocol {
   func showError(error: NSError)
@@ -23,13 +24,33 @@ final class BookDetailsPresenter {
     self.presentable = presentable
     self.book = book
     
+    configureNotifications()
+    
     buildSections()
   }
 }
 
 private extension BookDetailsPresenter {
-  private func buildSections() {
-    let sections = [TableSection(objects: [book], cellClass: BookHeaderCell())]
+  @objc private func buildSections() {
+    var sections = [TableSection]()
+    
+    sections.append(TableSection(objects: [book], cellClass: BookHeaderCell()))
+    
+    if (FBSDKAccessToken.currentAccessToken() != nil) {
+      sections.append(TableSection(objects: ["Share on Facebook"], cellClass: TextCell()))
+      sections.append(TableSection(objects: ["Like \(book.title)"], cellClass: TextCell()))
+    }
+    else {
+      sections.append(TableSection(objects: [""], cellClass: LoginCell()))
+    }
+    
     presentable.showSections(sections)
+  }
+}
+
+private extension BookDetailsPresenter {
+  func configureNotifications() {
+    Notifications.FacebookStatusDidChange.addObserver(self, selector: #selector(buildSections))
+    Notifications.FacebookStatusDidLogout.addObserver(self, selector: #selector(buildSections))
   }
 }
