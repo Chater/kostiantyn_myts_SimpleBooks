@@ -25,7 +25,8 @@ class APIClient {
 
 extension APIClient {
   class func get(request: NSURLRequest, completion: CompletionHandler) {
-    print(request.URL)
+    print("Request to: \(request.URL)")
+    
     let task: NSURLSessionDataTask = APIClient.sharedClient.session.dataTaskWithRequest(request) {
       (data, response, error) -> Void in
       
@@ -35,13 +36,9 @@ extension APIClient {
       }
       
       guard let data = data else {
-        //TODO: return new error
-        completion(response: nil, error: nil)
+        completion(response: nil, error: NSError(domain: "Error", code: -999, userInfo: nil))
         return
       }
-      
-      let response = NSString(data: data, encoding: NSUTF8StringEncoding)
-      print(response)
       
       do {
         let JSON = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions())

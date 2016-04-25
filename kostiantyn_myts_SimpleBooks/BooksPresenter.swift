@@ -47,10 +47,9 @@ private extension BooksPresenter {
         self.presentable.showError(error)
       }
       else if let books = books {
-        let section = TableSection(objects: books, cellClass: BookCell()) {
+        let section = TableSection(objects: books, cellClass: BookCell()) {[unowned self]
           cell, object in
-          print((object as! Book).title)
-          print((object as! Book).imageURL)
+
           self.presentable.showBookDetails(object as! Book)
         }
         
