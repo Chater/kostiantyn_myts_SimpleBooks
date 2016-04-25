@@ -9,13 +9,45 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "kostiantyn_myts_SimpleBooks/FacebookLoginHelper.swift"
-            timestampString = "483281329.608416"
+            filePath = "kostiantyn_myts_SimpleBooks/BookDetailsPresenter.swift"
+            timestampString = "483300425.983089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "loginButtonWillLogin(_:)"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "configureNotifications()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kostiantyn_myts_SimpleBooks/LoginCell.swift"
+            timestampString = "483294351.135553"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loginButton(_:didCompleteWithResult:error:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kostiantyn_myts_SimpleBooks/LoginCell.swift"
+            timestampString = "483294353.003704"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "loginButtonDidLogOut(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

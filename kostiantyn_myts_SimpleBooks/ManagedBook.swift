@@ -17,5 +17,4 @@ class ManagedBook: NSManagedObject {
   @NSManaged var rank: NSNumber?
   @NSManaged var amazonURLString: String?
   @NSManaged var imageURLString: String?
-  @NSManaged var storedImageName: String?
 }
