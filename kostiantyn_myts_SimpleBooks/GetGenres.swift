@@ -15,7 +15,7 @@ class GetGenres {
     APIClient.get(RequestType.Genres.request) {
       response, error in
       
-      if let error = error {
+      if let error = error where error.code != NSURLErrorNotConnectedToInternet {
         completionHandler(genres: nil, error: error)
       }
       else if let response = response {

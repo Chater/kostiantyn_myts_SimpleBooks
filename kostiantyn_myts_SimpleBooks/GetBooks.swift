@@ -14,7 +14,7 @@ class GetBooks: NSObject {
   class func get(genre: Genre, completionHandler: CompletionHandler) {
     APIClient.get(RequestType.Books(genre).request) {
       response, error in
-      if let error = error {
+      if let error = error where error.code != NSURLErrorNotConnectedToInternet {
         completionHandler(books: nil, error: error)
       }
       else if let response = response {
