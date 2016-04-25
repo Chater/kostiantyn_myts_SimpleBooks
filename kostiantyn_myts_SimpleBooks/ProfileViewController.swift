@@ -42,9 +42,11 @@ extension ProfileViewController: ProfilePresentable {
 
 private extension ProfileViewController {
   private func configure() {
+    title = NSLocalizedString("Profile", comment: "")
+    
+    configureTableView()
     configurePresenter()
     configureLoginButton()
-    configureTableView()
   }
   
   private func configurePresenter() {

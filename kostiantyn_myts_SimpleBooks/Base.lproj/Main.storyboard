@@ -46,7 +46,7 @@
         <scene sceneID="VFR-x0-cBt">
             <objects>
                 <tableViewController storyboardIdentifier="BookDetailsViewController" id="LLz-yC-5FP" customClass="BookDetailsViewController" customModule="kostiantyn_myts_SimpleBooks" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VnB-6f-jLO">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VnB-6f-jLO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,11 +79,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Genres-->
         <scene sceneID="dX3-Cu-sy5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qiw-je-DLW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gks-Ql-Sai"/>
+                    <tabBarItem key="tabBarItem" title="Genres" id="gks-Ql-Sai"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8hf-uA-JLc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -143,11 +143,11 @@
             </objects>
             <point key="canvasLocation" x="1562" y="475"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="bVI-iq-r7f">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lMu-NI-dsF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CRj-H1-Y7r"/>
+                <navigationController title="Profile" automaticallyAdjustsScrollViewInsets="NO" id="lMu-NI-dsF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="CRj-H1-Y7r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ima-ji-Xbv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

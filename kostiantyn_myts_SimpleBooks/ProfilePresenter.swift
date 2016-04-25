@@ -26,6 +26,8 @@ class ProfilePresenter: NSObject {
     self.presentable = presentable
     
     buildSections()
+    
+    Notifications.LikedBooksDidChange.addObserver(self, selector: #selector(buildSections))
   }
 }
 
@@ -49,11 +51,27 @@ extension ProfilePresenter: FBSDKLoginButtonDelegate {
 }
 
 private extension ProfilePresenter {
-  private func buildSections() {
-    
+  @objc private func buildSections() {
+    GetLikedBooks.get() {[unowned self]
+      books in
+      if let books = books {
+        let section = TableSection(objects: books, cellClass: BookCell()) {
+          cell, object in
+          self.presentable.showBookDetails(object as! Book)
+        }
+        
+        self.presentable.showSections([section])
+      }
+      else {
+        self.presentable.showSections([])
+      }
+    }
   }
   
   private func cleanUpLikedBooks() {
-    
+    RemoveLikedBooks.remove() {[unowned self]
+      in
+      self.buildSections()
+    }
   }
 }
