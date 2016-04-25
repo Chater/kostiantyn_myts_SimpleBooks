@@ -32,8 +32,9 @@ extension BooksViewController: BooksPresentable {
     }
   }
   
-  func showSection(section: TableSection) {
-    self.tableManager.sections = [section]
+  func showSections(sections: [TableSection]?) {
+    refreshControl?.endRefreshing()
+    self.tableManager.sections = sections
   }
   
   func showBookDetails(book: Book) {
@@ -50,6 +51,7 @@ private extension BooksViewController {
     
     configurePresenter()
     configureTableView()
+    configurePullToRefresh()
   }
   
   private func configurePresenter() {
@@ -58,6 +60,12 @@ private extension BooksViewController {
   
   private func configureTableView() {
     self.tableManager = TableManager(tableView: tableView)
+  }
+  
+  private func configurePullToRefresh() {
+    let refreshControl = UIRefreshControl()
+    refreshControl.addTarget(presenter, action: #selector(presenter.reload), forControlEvents: .ValueChanged)
+    self.refreshControl = refreshControl
   }
 }
 

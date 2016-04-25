@@ -25,11 +25,11 @@ private extension BookCell {
   private func updateWithBook(book: Book) {
     bookTitleLabel.attributedText = book.title + ("\nby " + book.author).color(.darkGrayColor()).font(UIFont.systemFontOfSize(14))
     
-    ImageCache.imageForBook(book) {[unowned self]
+    ImageCache.imageForBook(book) {[weak self]
       image, _ in
       
       if let image = image {
-        self.coverView.image = image
+        self?.coverView.image = image
       }
     }
   }

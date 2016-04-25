@@ -11,7 +11,7 @@ import UIKit
 protocol BooksPresentable: NSObjectProtocol {
   func setLoading(loading: Bool)
   func showError(error: NSError)
-  func showSection(section: TableSection)
+  func showSections(sections: [TableSection]?)
   func showBookDetails(book: Book)
 }
 
@@ -30,7 +30,7 @@ class BooksPresenter {
 }
 
 extension BooksPresenter {
-  func reload() {
+  @objc func reload() {
     getBooks()
   }
 }
@@ -53,7 +53,7 @@ private extension BooksPresenter {
           self.presentable.showBookDetails(object as! Book)
         }
         
-        self.presentable.showSection(section)
+        self.presentable.showSections([section])
       }
 
     }

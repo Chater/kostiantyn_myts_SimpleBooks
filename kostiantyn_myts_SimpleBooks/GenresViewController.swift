@@ -11,7 +11,6 @@ import UIKit
 class GenresViewController: UITableViewController {
   private var tableManager: TableManager!
   private var presenter: GenresPresenter!
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -30,8 +29,9 @@ extension GenresViewController: GenresPresentable {
     }
   }
   
-  func showSection(section: TableSection) {
-    self.tableManager.sections = [section]
+  func showSections(sections: [TableSection]?) {
+    refreshControl?.endRefreshing()
+    self.tableManager.sections = sections
   }
   
   func showGenreDetails(genre: Genre) {
@@ -48,6 +48,7 @@ private extension GenresViewController {
     
     configurePresenter()
     configureTableView()
+    configurePullToRefresh()
   }
   
   private func configurePresenter() {
@@ -56,6 +57,12 @@ private extension GenresViewController {
   
   private func configureTableView() {
     self.tableManager = TableManager(tableView: tableView)
+  }
+  
+  private func configurePullToRefresh() {
+    let refreshControl = UIRefreshControl()
+    refreshControl.addTarget(presenter, action: #selector(presenter.reload), forControlEvents: .ValueChanged)
+    self.refreshControl = refreshControl
   }
 }
 

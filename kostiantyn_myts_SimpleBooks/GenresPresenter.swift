@@ -11,7 +11,7 @@ import UIKit
 protocol GenresPresentable: NSObjectProtocol {
   func setLoading(loading: Bool)
   func showError(error: NSError)
-  func showSection(section: TableSection)
+  func showSections(sections: [TableSection]?)
   func showGenreDetails(genre: Genre)
 }
 
@@ -28,7 +28,7 @@ class GenresPresenter {
 }
 
 extension GenresPresenter {
-  func reload() {
+  @objc func reload() {
     getGenres()
   }
 }
@@ -50,7 +50,7 @@ private extension GenresPresenter {
           self.presentable.showGenreDetails(object as! Genre)
         }
         
-        self.presentable.showSection(section)
+        self.presentable.showSections([section])
       }
     }
 
