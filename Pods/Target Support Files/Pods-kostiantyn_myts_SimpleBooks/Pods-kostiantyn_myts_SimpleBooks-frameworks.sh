@@ -82,3 +82,16 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/Bolts.framework"
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/FBSDKCoreKit.framework"
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/FBSDKLoginKit.framework"
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/FBSDKShareKit.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/Bolts.framework"
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/FBSDKCoreKit.framework"
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/FBSDKLoginKit.framework"
+  install_framework "Pods-kostiantyn_myts_SimpleBooks/FBSDKShareKit.framework"
+fi

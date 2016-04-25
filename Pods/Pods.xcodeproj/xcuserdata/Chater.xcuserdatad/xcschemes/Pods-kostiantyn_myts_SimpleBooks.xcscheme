@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CC218D25E9F051912B6EC224'
+               BlueprintIdentifier = '4BA12150ECC72A739DADCD43'
                BlueprintName = 'Pods-kostiantyn_myts_SimpleBooks'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-kostiantyn_myts_SimpleBooks.a'>
+               BuildableName = 'Pods_kostiantyn_myts_SimpleBooks.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
