@@ -36,13 +36,17 @@ private extension BookDetailsPresenter {
   @objc private func buildSections() {
     var sections = [TableSection]()
     
-    sections.append(TableSection(objects: [book], cellClass: BookHeaderCell()))
+    sections.append(TableSection(objects: [book], cellClass: BookHeaderCell()) {[unowned self]
+      _, _ in
+      self.openAmazonURL()
+      })
     
     if (FBSDKAccessToken.currentAccessToken() != nil) {
       let shareSection = TableSection(objects: [NSLocalizedString("Share on Facebook", comment: "")], cellClass: TextCell()) {[unowned self]
         _, _ in
         self.presentable.openShareDialog()
       }
+      
       sections.append(shareSection)
       
       let likeTitle = book.isLiked() ? NSLocalizedString("Unlike", comment: "") : NSLocalizedString("Like", comment: "")
@@ -65,6 +69,12 @@ private extension BookDetailsPresenter {
       liked in
       
       self.buildSections()
+    }
+  }
+  
+  private func openAmazonURL() {
+    if UIApplication.sharedApplication().canOpenURL(book.amazonURL) {
+      UIApplication.sharedApplication().openURL(book.amazonURL)
     }
   }
 }
