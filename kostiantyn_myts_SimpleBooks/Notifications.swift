@@ -13,6 +13,7 @@ import UIKit
 enum Notifications: String {
   case FacebookStatusDidChange
   case FacebookStatusDidLogout
+  case LikedBooksDidChange
   
   func post() {
     NSNotificationCenter.defaultCenter().postNotificationName(rawValue, object: nil)

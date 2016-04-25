@@ -15,6 +15,12 @@ class LoginCell: UITableViewCell, TableViewCellProtocol {
   var height: CGFloat = 50.0
   var cellName: String = "LoginCell"
   var object: AnyObject!
+  
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    
+    loginButton.delegate = self
+  }
 }
 
 extension LoginCell: FBSDKLoginButtonDelegate {

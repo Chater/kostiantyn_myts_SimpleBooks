@@ -39,14 +39,17 @@ private extension BookDetailsPresenter {
     sections.append(TableSection(objects: [book], cellClass: BookHeaderCell()))
     
     if (FBSDKAccessToken.currentAccessToken() != nil) {
-      let shareSection = TableSection(objects: ["Share on Facebook"], cellClass: TextCell()) {[unowned self]
+      let shareSection = TableSection(objects: [NSLocalizedString("Share on Facebook", comment: "")], cellClass: TextCell()) {[unowned self]
         _, _ in
         self.presentable.openShareDialog()
       }
-      
       sections.append(shareSection)
       
-      sections.append(TableSection(objects: ["Like \(book.title)"], cellClass: TextCell()))
+      let likeTitle = book.isLiked() ? NSLocalizedString("Unlike", comment: "") : NSLocalizedString("Like", comment: "")
+      sections.append(TableSection(objects: ["\(likeTitle) \(book.title)"], cellClass: TextCell()) {[unowned self]
+        _, _ in
+        self.changeBookLikeStatus()
+        })
     }
     else {
       sections.append(TableSection(objects: [""], cellClass: LoginCell()))
@@ -57,8 +60,12 @@ private extension BookDetailsPresenter {
 }
 
 private extension BookDetailsPresenter {
-  private func openShareDialog() {
-   
+  private func changeBookLikeStatus() {
+    ChangeBookLikeStatus.change(book) {[unowned self]
+      liked in
+      
+      self.buildSections()
+    }
   }
 }
 
@@ -66,5 +73,6 @@ private extension BookDetailsPresenter {
   func configureNotifications() {
     Notifications.FacebookStatusDidChange.addObserver(self, selector: #selector(buildSections))
     Notifications.FacebookStatusDidLogout.addObserver(self, selector: #selector(buildSections))
+    Notifications.LikedBooksDidChange.addObserver(self, selector: #selector(buildSections))
   }
 }
