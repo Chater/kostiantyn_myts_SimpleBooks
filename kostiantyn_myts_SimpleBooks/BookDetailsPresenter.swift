@@ -9,9 +9,11 @@
 import UIKit
 import FBSDKCoreKit
 
+
 protocol BookDetailsPresentable: NSObjectProtocol {
   func showError(error: NSError)
   func showSections(sections: [TableSection])
+  func openShareDialog()
 }
 
 final class BookDetailsPresenter {
@@ -37,7 +39,13 @@ private extension BookDetailsPresenter {
     sections.append(TableSection(objects: [book], cellClass: BookHeaderCell()))
     
     if (FBSDKAccessToken.currentAccessToken() != nil) {
-      sections.append(TableSection(objects: ["Share on Facebook"], cellClass: TextCell()))
+      let shareSection = TableSection(objects: ["Share on Facebook"], cellClass: TextCell()) {[unowned self]
+        _, _ in
+        self.presentable.openShareDialog()
+      }
+      
+      sections.append(shareSection)
+      
       sections.append(TableSection(objects: ["Like \(book.title)"], cellClass: TextCell()))
     }
     else {
@@ -45,6 +53,12 @@ private extension BookDetailsPresenter {
     }
     
     presentable.showSections(sections)
+  }
+}
+
+private extension BookDetailsPresenter {
+  private func openShareDialog() {
+   
   }
 }
 

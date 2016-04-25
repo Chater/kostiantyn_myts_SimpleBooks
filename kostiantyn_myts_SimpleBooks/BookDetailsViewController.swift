@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKShareKit
 
 class BookDetailsViewController: UITableViewController {
   private var tableManager: TableManager!
@@ -34,6 +35,15 @@ extension BookDetailsViewController: BookDetailsPresentable {
   
   func showSections(sections: [TableSection]) {
     tableManager.sections = sections
+  }
+  
+  func openShareDialog() {
+    let shareContent = FBSDKShareLinkContent()
+    shareContent.contentTitle = book.title + " by " + book.author
+    shareContent.imageURL = book.imageURL
+    shareContent.contentDescription = book.amazonURL.absoluteString
+    
+    FBSDKShareDialog.showFromViewController(self, withContent: shareContent, delegate: nil)
   }
 }
 
