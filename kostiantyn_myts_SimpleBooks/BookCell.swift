@@ -23,7 +23,7 @@ class BookCell: UITableViewCell, TableViewCellProtocol {
 
 private extension BookCell {
   private func updateWithBook(book: Book) {
-    bookTitleLabel.attributedText = book.title + ("\nby " + book.author).color(.darkGrayColor()).font(UIFont.systemFontOfSize(14))
+    bookTitleLabel.attributedText = book.title + ("\nby " + book.author).color(.darkGrayColor()).font(.systemFontOfSize(14))
     
     ImageCache.imageForBook(book) {[weak self]
       image, _ in

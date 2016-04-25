@@ -23,9 +23,9 @@ class BookHeaderCell: UITableViewCell, TableViewCellProtocol {
 
 private extension BookHeaderCell {
   private func updateWithBook(book: Book) {
-    let authorString = ("by " + book.author).color(.darkGrayColor()).font(UIFont.systemFontOfSize(14))
-    let rankString = "Rank: \(book.rank)".color(.darkGrayColor()).font(UIFont.italicSystemFontOfSize(14))
-    let amazonString = "Amazon: \(book.amazonURL.absoluteString)".color(.darkGrayColor()).font(UIFont.italicSystemFontOfSize(12))
+    let authorString = ("by " + book.author).color(.darkGrayColor()).font(.systemFontOfSize(14))
+    let rankString = "Rank: \(book.rank)".color(.darkGrayColor()).font(.italicSystemFontOfSize(14))
+    let amazonString = "Amazon: \(book.amazonURL.absoluteString)".color(.darkGrayColor()).font(.italicSystemFontOfSize(12))
     
     bookTitleLabel.attributedText =
       book.title
