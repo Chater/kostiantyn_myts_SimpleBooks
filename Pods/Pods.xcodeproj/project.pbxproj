@@ -96,6 +96,68 @@
 				</array>
 			</dict>
 		</dict>
+		<key>03D14BCAEC2589815F36B8A9251A2650</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1BED1F981EA6F06BF750200F5CD0D9AA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Pods-kostiantyn_myts_SimpleBooks.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_kostiantyn_myts_SimpleBooks</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>03DA788984A87E7547E5A9F1926CE565</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -296,8 +358,8 @@
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>1ADDCFA208997B4E266767AD807B6A38</string>
-				<string>E8A8B9996555C0FD1BA8D642C99D2383</string>
+				<string>744877C2F7BBD3577E53B15263F51D47</string>
+				<string>AC08F7C846970811436C937932C99A12</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -735,62 +797,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>1232276D4013CEC6A7CD92661CE14B44</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9CBBB1E8AA23C9E92E4EA62E469EDB83</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Bolts/Bolts-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Bolts/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Bolts/Bolts.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>Bolts</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
 		<key>1286835534A769356D30EA49CE9540F6</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1118,8 +1124,8 @@
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>99C475C06C469F3202CAACE99262BA77</string>
-				<string>1232276D4013CEC6A7CD92661CE14B44</string>
+				<string>9B1895E228DA7B618792DA2B8493B35C</string>
+				<string>728E0B351F44B35BF6E5FF7A45470DC7</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -1171,62 +1177,6 @@
 			<string>07364AEA37A88E2E6449411D96E08BA7</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>1ADDCFA208997B4E266767AD807B6A38</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>91F6742C3FCBFAF93FD18B08EF8C2324</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FBSDKShareKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>FBSDKShareKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>1B8401CA3196A19F60543CF2C8F2E134</key>
 		<dict>
@@ -1332,6 +1282,68 @@
 			<string>AppLinks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1E8179199345BF8C9C83F1C55759D8D5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>571C75A30C88A679D0D88A0BDB1619B9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Pods-kostiantyn_myts_SimpleBooks.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_kostiantyn_myts_SimpleBooks</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>1ECFD7FED54E3F9F961E45AC583F2D41</key>
 		<dict>
@@ -1472,6 +1484,62 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>23D74E110D4923F9135C57FEA84C9154</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>83F138FC93495EA2C616326E429208E3</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/FBSDKCoreKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>FBSDKCoreKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>2407049750A16AD29BF4D2226A6A6AAD</key>
 		<dict>
@@ -1619,62 +1687,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>28BDAC389788CA83ED88121404718B61</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>411CEE9D8C44B40CEFEC61F279904108</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FBSDKLoginKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>FBSDKLoginKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
 		<key>290E7890207984177124BD5F84F0D04C</key>
 		<dict>
 			<key>fileRef</key>
@@ -1738,79 +1750,6 @@
 			<string>Bolts.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2B389FAB51F6EEA43F72CA7BDC8E8E28</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>2B63151A6098850ADB36C74444811925</key>
 		<dict>
@@ -1939,8 +1878,8 @@
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>2B389FAB51F6EEA43F72CA7BDC8E8E28</string>
-				<string>5A0C6FE968931D888F00C9EC18DDF5BC</string>
+				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
+				<string>FB45FFD90572718D82AB9092B750F0CA</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -2144,6 +2083,62 @@
 			<string>FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeButtonPopWAV.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3097DB53B21F5F1CA6CFA05973AD51D1</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>411CEE9D8C44B40CEFEC61F279904108</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/FBSDKLoginKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>FBSDKLoginKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>30A16329AEE53E86C298F21D01D398E3</key>
 		<dict>
@@ -2929,6 +2924,62 @@
 			<string>FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTypeUtility.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4402F21AC9226D29AFF82D62F5FE7F02</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>411CEE9D8C44B40CEFEC61F279904108</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/FBSDKLoginKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>FBSDKLoginKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>44950FF8AA65D5BDC1355BE85ED81E3F</key>
 		<dict>
@@ -3791,74 +3842,6 @@
 			<string>8DDB03DBA8B9E2DCF7945E1DA4AC2502</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>5A0C6FE968931D888F00C9EC18DDF5BC</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>5A379A4119B337C9E749C49BEBE0456A</key>
 		<dict>
@@ -4734,68 +4717,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>7175F12F5DA0CA91DFFA184C66F1AE39</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1BED1F981EA6F06BF750200F5CD0D9AA</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Pods-kostiantyn_myts_SimpleBooks.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_kostiantyn_myts_SimpleBooks</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
 		<key>72448B8649FEF0CA00D2AB0929B2EC25</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -4817,6 +4738,62 @@
 			<string>212A08320D2F272C1D65AED2047BB7A6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>728E0B351F44B35BF6E5FF7A45470DC7</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9CBBB1E8AA23C9E92E4EA62E469EDB83</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Bolts/Bolts-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Bolts/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Bolts/Bolts.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Bolts</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>72C59AF4F608073684ED4FBCE3382FF9</key>
 		<dict>
@@ -4890,6 +4867,62 @@
 			<string>FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration+Internal.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>744877C2F7BBD3577E53B15263F51D47</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>91F6742C3FCBFAF93FD18B08EF8C2324</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/FBSDKShareKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>FBSDKShareKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>752047666CCF5F6F2B56B8F676726A0E</key>
 		<dict>
@@ -5014,68 +5047,6 @@
 			<string>FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager+Internal.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>78FD057A7FEE88D24E01535F39E76F6E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>571C75A30C88A679D0D88A0BDB1619B9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-kostiantyn_myts_SimpleBooks/Pods-kostiantyn_myts_SimpleBooks.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_kostiantyn_myts_SimpleBooks</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
 		</dict>
 		<key>7996B7702DB8A5159CD112BE8CFA5224</key>
 		<dict>
@@ -5346,8 +5317,8 @@
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>B717685214CEF57263FAC4E924B4B30B</string>
-				<string>28BDAC389788CA83ED88121404718B61</string>
+				<string>4402F21AC9226D29AFF82D62F5FE7F02</string>
+				<string>3097DB53B21F5F1CA6CFA05973AD51D1</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -5367,8 +5338,8 @@
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>E45C2E3CD0D0C86F85526615A6BD1834</string>
-				<string>BD8E9D54F5F627AB0036EC7DB72F196D</string>
+				<string>E855D9C99E7A9053D50077624D3ADDEA</string>
+				<string>23D74E110D4923F9135C57FEA84C9154</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -5619,8 +5590,8 @@
 		<dict>
 			<key>buildConfigurations</key>
 			<array>
-				<string>78FD057A7FEE88D24E01535F39E76F6E</string>
-				<string>7175F12F5DA0CA91DFFA184C66F1AE39</string>
+				<string>1E8179199345BF8C9C83F1C55759D8D5</string>
+				<string>03D14BCAEC2589815F36B8A9251A2650</string>
 			</array>
 			<key>defaultConfigurationIsVisible</key>
 			<string>0</string>
@@ -6714,62 +6685,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>99C475C06C469F3202CAACE99262BA77</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9CBBB1E8AA23C9E92E4EA62E469EDB83</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/Bolts/Bolts-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Bolts/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Bolts/Bolts.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>Bolts</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>9AD6DDFFA4FA7344B7DDE58EC383B691</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -6835,6 +6750,62 @@
 			<string>FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKMath.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B1895E228DA7B618792DA2B8493B35C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9CBBB1E8AA23C9E92E4EA62E469EDB83</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Bolts/Bolts-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Bolts/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Bolts/Bolts.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Bolts</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>9C54F07A5D6128AEA08BE4131CCCF746</key>
 		<dict>
@@ -7239,6 +7210,79 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>A70FE7BF13A3EA4C325FEE921373E994</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -7498,6 +7542,62 @@
 			<string>FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC08F7C846970811436C937932C99A12</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>91F6742C3FCBFAF93FD18B08EF8C2324</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/FBSDKShareKit/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>FBSDKShareKit</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>AC17ABF5A0180CB632C361141AF267B4</key>
 		<dict>
@@ -7899,62 +7999,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>B717685214CEF57263FAC4E924B4B30B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>411CEE9D8C44B40CEFEC61F279904108</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FBSDKLoginKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FBSDKLoginKit/FBSDKLoginKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>FBSDKLoginKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>B7215998DB12F2CB4F4E41D48811FC3A</key>
 		<dict>
 			<key>fileRef</key>
@@ -8183,62 +8227,6 @@
 			<string>FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeButtonPopWAV.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD8E9D54F5F627AB0036EC7DB72F196D</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>83F138FC93495EA2C616326E429208E3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FBSDKCoreKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>FBSDKCoreKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
 		</dict>
 		<key>BDB6E5CDFB2E0B1A5D70C177B7F4857D</key>
 		<dict>
@@ -9925,62 +9913,6 @@
 				</array>
 			</dict>
 		</dict>
-		<key>E45C2E3CD0D0C86F85526615A6BD1834</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>83F138FC93495EA2C616326E429208E3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FBSDKCoreKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>FBSDKCoreKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
 		<key>E4A2376D810C4B2710CA7906CEB65F64</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -10097,10 +10029,10 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E8A8B9996555C0FD1BA8D642C99D2383</key>
+		<key>E855D9C99E7A9053D50077624D3ADDEA</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>91F6742C3FCBFAF93FD18B08EF8C2324</string>
+			<string>83F138FC93495EA2C616326E429208E3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -10118,13 +10050,13 @@
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
 				<string>YES</string>
 				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit-prefix.pch</string>
+				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit-prefix.pch</string>
 				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FBSDKShareKit/Info.plist</string>
+				<string>Target Support Files/FBSDKCoreKit/Info.plist</string>
 				<key>INSTALL_PATH</key>
 				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
 				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
+				<string>8.0</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<array>
 					<string>$(inherited)</string>
@@ -10132,11 +10064,11 @@
 					<string>@loader_path/Frameworks</string>
 				</array>
 				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FBSDKShareKit/FBSDKShareKit.modulemap</string>
+				<string>Target Support Files/FBSDKCoreKit/FBSDKCoreKit.modulemap</string>
 				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
+				<string>YES</string>
 				<key>PRODUCT_NAME</key>
-				<string>FBSDKShareKit</string>
+				<string>FBSDKCoreKit</string>
 				<key>SDKROOT</key>
 				<string>iphoneos</string>
 				<key>SKIP_INSTALL</key>
@@ -10151,7 +10083,7 @@
 			<key>isa</key>
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>Debug</string>
 		</dict>
 		<key>E9EEC6C8F1D68B18137981BE5EE2CF36</key>
 		<dict>
@@ -10839,6 +10771,74 @@
 			<string>Bolts/iOS/BFAppLinkResolving.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FB45FFD90572718D82AB9092B750F0CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>FB7B76F9942AE0F7DEC11FAAEE4739B7</key>
 		<dict>
