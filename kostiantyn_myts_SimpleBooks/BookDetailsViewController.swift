@@ -43,7 +43,12 @@ extension BookDetailsViewController: BookDetailsPresentable {
     shareContent.imageURL = book.imageURL
     shareContent.contentDescription = book.amazonURL.absoluteString
     
-    FBSDKShareDialog.showFromViewController(self, withContent: shareContent, delegate: nil)
+    let dialog = FBSDKShareDialog()
+    dialog.fromViewController = self
+    dialog.shareContent = shareContent
+    dialog.mode = .FeedWeb
+    
+    dialog.show()
   }
 }
 
